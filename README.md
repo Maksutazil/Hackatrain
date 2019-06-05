@@ -23,7 +23,7 @@ Starts parking action until it stopped or until maximum time reached. Maximum ti
 
 ### **Parameters**
 | Type | Name | Description | Schema | Default | 
-| ------ | ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ |
 | Header | **Authorization** optional | | string | "Bearer "
 | Header | **X-Trip-Id** optioanl | | strign | "3244b22e-0bfd-4a89-ae13-1fc32d1920a1"
 | Body | **startParkingRequest** required | The start parking request | StartParkingRequest 
