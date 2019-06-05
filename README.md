@@ -8,9 +8,9 @@
 5. [Extend running parking session](#extendparking)
 6. [End running parking session](#endparking)
 7. [Get price of desired parking action](#calculateprice)
-8. [Get price of desired parking action](#getzoneinfooperatorlocation)
-9. [Get price of desired parking action](#getzoneinfogps)
-10. [Get extensive zone information](#getzoneInfo)
+8. [Get zone information](#getzoneinfooperatorlocation)
+9. [Get zone infromation by GPS coordinates](#getzoneinfogps)
+10.[Get extensive zone information](#getzoneInfo)
 
 
  
