@@ -10,7 +10,7 @@
 7. [Get price of desired parking action](#calculateprice)
 8. [Get zone information](#getzoneinfooperatorlocation)
 9. [Get zone infromation by GPS coordinates](#getzoneinfogps)
-10.[Get extensive zone information](#getzoneInfo)
+10. [Get extensive zone information](#getzoneInfo)
 
 
  
