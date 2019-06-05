@@ -27,7 +27,7 @@ Starts parking action until it stopped or until maximum time reached. Maximum ti
 | Header | **Authorization** optional | | string | "Bearer "
 | Header | **X-Trip-Id** optioanl | | strign | "3244b22e-0bfd-4a89-ae13-1fc32d1920a1"
 | Body | **startParkingRequest** required | The start parking request | StartParkingRequest 
-| 
+ 
 
 
 ### **Responses**
@@ -109,12 +109,12 @@ Stops parking action for parkign action id sent.
 
 ### **Parameters**
 | Type | Name | Description | Schema | Default | 
-| ------ | ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ | 
 | Header | **Authorization** optional | | string | "Bearer "
 | Header | **X-Trip-Id** optioanl | | strign | "3244b22e-0bfd-4a89-ae13-1fc32d1920a1"
 | Path | **id** required | Id of the paking action | strign | "3244b22e-0bfd-4a89-ae13-1fc32d1920a1"
 | Body | **stopParkingRequest** required | The stop parking request | StopParkingRequest 
-| 
+
 
 
 ### **Responses**
@@ -187,11 +187,11 @@ Returns running parking action.
 
 ### **Parameters**
 | Type | Name | Description | Schema | Default | 
-| ------ | ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ |
 | Header | **Authorization** optional | | string | "Bearer "
 | Header | **X-Trip-Id** optioanl | | strign | "3244b22e-0bfd-4a89-ae13-1fc32d1920a1"
 | Path | **id** required | Id of the paking action | strign | 
-| 
+ 
 
 
 ### **Responses**
@@ -264,11 +264,11 @@ Creates parking action with specified end time.
 
 ### **Parameters**
 | Type | Name | Description | Schema | Default | 
-| ------ | ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ |
 | Header | **Authorization** optional | | string | "Bearer "
 | Header | **X-Trip-Id** optioanl | | strign | "3244b22e-0bfd-4a89-ae13-1fc32d1920a1"
 | Body | **parkingrightRequest** required | The parking right request. | stRegisterParkingrightRequest | 
-| 
+
 
 
 ### **Responses**
@@ -407,12 +407,11 @@ Extends running parking action with new end time.
 
 ### **Parameters**
 | Type | Name | Description | Schema | Default | 
-| ------ | ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ |
 | Header | **Authorization** optional | | string | "Bearer "
 | Header | **X-Trip-Id** optioanl | | strign | "3244b22e-0bfd-4a89-ae13-1fc32d1920a1"
 | Path | **id** required | Id of the parkingright to change. | integer |
 | Body | **parkingrightRequest** required | The parking right request. | ExtendParkingrightRequestt | 
-| 
 
 
 ### **Responses**
@@ -467,12 +466,11 @@ Ends running parking action.
 
 ### **Parameters**
 | Type | Name | Description | Schema | Default | 
-| ------ | ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ |
 | Header | **Authorization** optional | | string | "Bearer "
 | Header | **X-Trip-Id** optioanl | | strign | "3244b22e-0bfd-4a89-ae13-1fc32d1920a1"
 | Path | **id** required | Id of the parkingright to change. | integer |
 | Body | **parkingrightRequest** required | The parking right request. | ChangeParkingrightRequest |
-| 
 
 
 ### **Responses**
@@ -527,11 +525,11 @@ Ends running parking action.
 
 ### **Parameters**
 | Type | Name | Description | Schema | Default | 
-| ------ | ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ |
 | Header | **Authorization** optional | | string | "Bearer "
 | Header | **X-Trip-Id** optioanl | | strign | "3244b22e-0bfd-4a89-ae13-1fc32d1920a1"
 | Body | **ratesCalculatePriceRequest** required | The parking right request. | RatesCalculatePriceRequest |
-| 
+
 
 
 ### **Responses**
@@ -681,12 +679,11 @@ Ends running parking action.
 
 ### **Parameters**
 | Type | Name | Description | Schema | Default | 
-| ------ | ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ | 
 | Header | **Authorization** optional | | string | "Bearer "
 | Header | **X-Trip-Id** optioanl | | strign | "3244b22e-0bfd-4a89-ae13-1fc32d1920a1"
 | Path | **operatorId** required | Operator id (Berlin). | string |  49101151
-| Path | **locationCode** required | Location code of the zone. | string |  
-| 
+| Path | **locationCode** required | Location code of the zone. | string |
 
 
 ### **Responses**
@@ -799,13 +796,12 @@ Gets zone info by GPS coordinates
 
 ### **Parameters**
 | Type | Name | Description | Schema | Default | 
-| ------ | ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ |
 | Header | **Authorization** optional | | string | "Bearer "
 | Header | **X-Trip-Id** optioanl | | strign | "3244b22e-0bfd-4a89-ae13-1fc32d1920a1"
 | Path | **lat** required | Lattitude. | string |  
 | Path | **lon** required | Longtitude. | string |  
-| Path | **rad** optional | Radius to search pased on provided lattitude and longtitude. | string |  
-| 
+| Path | **rad** optional | Radius to search pased on provided lattitude and longtitude. | string | 
 
 
 ### **Responses**
@@ -927,11 +923,10 @@ Returns extensive zone information. With all subzones.
 
 ### **Parameters**
 | Type | Name | Description | Schema | Default | 
-| ------ | ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ |
 | Header | **Authorization** optional | | string | "Bearer "
 | Header | **X-Trip-Id** optioanl | | strign | "3244b22e-0bfd-4a89-ae13-1fc32d1920a1"
 | Path | **locationcode** required | Location code of the zone. | string |  
-| 
 
 
 ### **Responses**
